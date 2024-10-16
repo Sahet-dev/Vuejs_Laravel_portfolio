@@ -26,7 +26,7 @@
         <div class="max-w-screen-lg mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div class="bg-white p-6 rounded-lg shadow-md text-center animated-element">
             <h3 class="text-xl font-bold mb-4">Social Media Website</h3>
-            <p class="mb-6">
+            <p class="mb-6 text-gray-800">
               A social media website is an online platform that allows users to create profiles, share content, connect with others, and engage in various forms of interaction within a digital community.
             </p>
             <a href="https://laravel-postify.com/" class="text-teal-500 hover:underline">View Project →</a>
@@ -41,7 +41,22 @@
           Ready to explore more? Dive into my portfolio and discover a collection of projects that highlight my technical skills and creative solutions.
         </p>
         <div class="flex justify-center space-x-6">
-          <router-link to="/projects" class="bg-teal-500 text-white py-3 px-6 rounded-lg hover:bg-teal-600">Explore Projects</router-link>
+
+
+
+
+            <div>
+                <!-- Button to show the Projects tab -->
+                <button
+                    @click="goToProjects"
+                    class="bg-teal-500 text-white py-3 px-6 rounded-lg hover:bg-teal-600">
+                    Explore Projects
+                </button>
+
+
+            </div>
+
+
           <router-link to="/contact" class="bg-gray-700 text-white py-3 px-6 rounded-lg hover:bg-gray-800">Contact</router-link>
         </div>
       </section>
@@ -51,17 +66,27 @@
   <script>
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
-  import { ref } from "vue";
+  import { ref, defineEmits } from "vue";
+  import Projects from "@/Pages/Profile/main/Projects.vue";
+  import {TabPanel} from "@headlessui/vue";
 
   export default {
+      methods: {
+          goToProjects() {
+              this.$emit('handleGoToProjects' );
+              console.log('clicked');
+              this.selectedTab = 1;
+          }
+      },
+      components: {TabPanel, Projects},
     data() {
       return {
-        imagePath: "./public/img/background.png", // Default image path
+        imagePath: "./public/img/background.png",
       };
     },
     setup() {
       const showTitle = ref(true);
-
+      const emit = defineEmits(['buttonClicked'])
       const beforeEnter = (el) => {
         el.style.transform = 'scale(0.1)'; // Start with smaller scale
         el.style.opacity = 0;
@@ -83,6 +108,7 @@
         enter,
       };
     },
+
     mounted() {
       gsap.registerPlugin(ScrollTrigger);
 

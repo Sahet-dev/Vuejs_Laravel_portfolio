@@ -1,6 +1,7 @@
 import '../css/app.css';
 import './bootstrap';
-
+// Supports weights 100-900
+import '@fontsource-variable/inter';
 import { createInertiaApp } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { createApp, h } from 'vue';

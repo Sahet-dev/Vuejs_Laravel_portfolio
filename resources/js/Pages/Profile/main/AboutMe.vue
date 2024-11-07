@@ -1,184 +1,64 @@
 <template>
-    <div class="text-gray-200 font-sans bg-gray-900 min-h-screen">
-
-        <section class="container mx-auto py-16">
-
-            <div class="max-w-2xl mx-auto space-y-12 text-gray-800">
-                <!-- About Me Section -->
-                <Transition appear @before-enter="beforeEnter" @enter="enter" @after-enter="afterEnter">
-                    <h2 v-if="showTitle" class="text-4xl font-bold text-center mb-6 text-gray-100 tracking-wider">About Me</h2>
-                </Transition>
-
-                <div class="bg-gray-800 rounded-lg p-8 shadow-xl transition-transform transform hover:scale-105">
-                    <p class="text-lg leading-relaxed text-justify text-gray-100">
-                        Hi, I am Sahet from Turkmenistan, passionate about frontend and backend development. I care about writing clean code and I
-                        enjoy learning about web development. I am currently seeking opportunities to work in a dynamic environment that fosters my growth
-                        into a full-fledged web developer.
-                    </p>
-                </div>
-
-                <!-- Skills and Expertise Section -->
-                <div class="animated-element">
-                    <h2 class="text-3xl font-bold mb-6 text-center text-gray-100 tracking-widest">Skills & Expertise</h2>
-                    <p class="text-lg mb-6 text-gray-300 text-center">
-                        I am proficient in technologies such as HTML, CSS, JavaScript, Vue.js, PHP, and Laravel. I specialize in crafting intuitive and aesthetically pleasing web applications.
-                    </p>
-
-                    <div class="flex justify-center space-x-6">
-                        <!-- Skill Icons -->
-                        <SkillIcon src="path-to-html-icon.svg" alt="HTML" />
-                        <SkillIcon src="path-to-css-icon.svg" alt="CSS" />
-                        <SkillIcon src="path-to-javascript-icon.svg" alt="JavaScript" />
-                        <SkillIcon src="path-to-vue-icon.svg" alt="Vue.js" />
-                        <SkillIcon src="path-to-laravel-icon.svg" alt="Laravel" />
-                    </div>
-                </div>
-
-                <!-- Certifications & Achievements Section -->
-                <div class="animated-element">
-                    <h2 class="text-3xl font-bold text-center mb-6 text-gray-100 tracking-wider">Certifications & Achievements</h2>
-                    <ul class="list-disc list-inside space-y-2 text-gray-300">
-                        <li><a href="https://symfonycasts.com/certificates/9B3AB07FC146" class="hover:underline hover:text-blue-400">Doctrine, Symfony & the Database</a></li>
-                        <li><a href="https://symfonycasts.com/certificates/507536ACC139" class="hover:underline hover:text-blue-400">Symfony 5 Security: Authenticators</a></li>
-                        <li><a href="https://symfonycasts.com/certificates/7F544974C149" class="hover:underline hover:text-blue-400">API Platform 3</a></li>
-                        <li><a href="https://symfonycasts.com/certificates/C9F320DBC150" class="hover:underline hover:text-blue-400">API Platform: Secure your Treasures</a></li>
-                        <li><a href="https://www.freecodecamp.org/certification/Sahet/front-end-development-libraries" class="hover:underline hover:text-blue-400">FreeCodeCamp Certification</a></li>
-                    </ul>
-                </div>
-
-                <!-- Education Section -->
-                <div class="animated-element">
-                    <h2 class="text-3xl font-bold text-center mb-6 text-gray-100 tracking-widest">Education</h2>
-                    <div class="bg-gray-800 rounded-lg p-8 shadow-lg transition-transform transform hover:scale-105">
-                        <h3 class="text-xl font-bold mb-2 text-gray-100">
-                            Bachelor's Degree - Technical University of Cluj-Napoca
-                        </h3>
-                        <p class="text-gray-300">
-                            Faculty of Industrial Engineering, Robotics, and Production Management.
-                        </p>
-                        <span class="text-sm text-gray-500">2021 - Present</span>
-                    </div>
-                </div>
-
+    <div class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 px-4 font-roboto-mono">
+        <div class="max-w-3xl mx-auto space-y-12">
+            <!-- About Me Section -->
+            <div class="text-center space-y-4" v-motion-slide-top>
+                <h1 class="text-5xl font-bold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">
+                    About Me
+                </h1>
+                <p class="text-slate-300 text-lg">
+                    Hi, I'm Sahet from Turkmenistan, passionate about frontend and backend development. I care about writing clean code and am constantly seeking new challenges to improve my skills.
+                </p>
             </div>
 
-        </section>
+            <!-- Biography Card -->
+            <div class="relative bg-white/5 backdrop-blur-lg border-0 shadow-2xl rounded-lg overflow-hidden p-8" >
+                <div class="space-y-6">
+                    <p class="text-lg text-slate-300">
+                        I enjoy exploring the latest web technologies and building projects that have a real-world impact. My journey started with simple websites and has now grown into complex applications.
+                    </p>
+                    <p class="text-lg text-slate-300">
+                        In my free time, I love learning new frameworks, improving my UI/UX design skills, and contributing to open-source projects.
+                    </p>
+                    <p class="text-lg text-slate-300">
+                        I'm looking forward to working in a dynamic environment that values creativity, teamwork, and continuous growth.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="text-center space-y-4" >
+                <h2 class="text-2xl font-semibold text-white">My Skills</h2>
+                <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 text-slate-300">
+                    <div v-for="skill in skills" :key="skill" class="transform hover:scale-105 transition-transform duration-300">
+                        <span class="inline-block px-4 py-2 bg-slate-700 rounded-full">{{ skill }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center space-y-4">
+                <h2 class="text-2xl font-semibold text-white">Education</h2>
+
+                <p>Bachelor’s Degree, Technical University of Cluj-Napoca. Faculty of Industrial Engineering, Robotics and Production
+                    Management
+                </p>
+                <p class="text-gray-500 ">2021 - current</p>
+
+
+            </div>
+        </div>
 
     </div>
 </template>
 
-<script>
-import { ref } from 'vue';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+<script setup>
+import { ref } from 'vue'
 
-export default {
-    data() {
-        return {
-            imagePath: "public/img/img.png",
-        };
-    },
-    setup() {
-        const showTitle = ref(true);
-
-        const beforeEnter = (el) => {
-            el.style.transform = 'translateY(-60px)';
-            el.style.opacity = 0;
-        };
-
-        const enter = (el, done) => {
-            gsap.to(el, {
-                duration: 1,
-                y: 0,
-                opacity: 1,
-                ease: 'bounce.out',
-                onComplete: done,
-            });
-        };
-
-        const afterEnter = () => {};
-
-        return {
-            showTitle,
-            beforeEnter,
-            enter,
-            afterEnter,
-        };
-    },
-
-    mounted() {
-        gsap.registerPlugin(ScrollTrigger);
-
-        const elements = this.$el.querySelectorAll('.animated-element');
-
-        elements.forEach((element) => {
-            gsap.set(element, { opacity: 0, skewX: 20 });
-
-            gsap.to(element, {
-                opacity: 1,
-                skewX: 0,
-                duration: 1,
-                scrollTrigger: {
-                    trigger: element,
-                    start: 'top 90%',
-                    end: 'bottom 70%',
-                    scrub: true,
-                    markers: false,
-                    onEnter: () => {
-                        element.classList.add('animate');
-                    },
-                    onLeaveBack: () => {
-                        element.classList.remove('animate');
-                    },
-                },
-            });
-        });
-    },
-};
+const skills = ref([
+    'HTML', 'CSS', 'JavaScript ES6', 'Vue.js', 'PHP',  'MySQL', 'SQL',  'Laravel', 'Git', 'REST API', 'Ubuntu', 'Docker', 'GitHub',
+])
 </script>
 
 <style scoped>
-.text-gray-100 {
-    color: #E5E7EB;
-}
-
-.bg-gray-800 {
-    background-color: #2D3748;
-}
-
-.container {
-    padding: 2rem;
-}
-
-.shadow-xl {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-}
-
-.hover\:scale-105:hover {
-    transform: scale(1.05);
-}
-
-.hover\:underline:hover {
-    text-decoration: underline;
-}
-
-.flex {
-    display: flex;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.space-x-6 > * + * {
-    margin-left: 1.5rem;
-}
-
-.tracking-wider {
-    letter-spacing: 0.05em;
-}
-
-.tracking-widest {
-    letter-spacing: 0.1em;
-}
+/* Add any additional custom styles here */
 </style>

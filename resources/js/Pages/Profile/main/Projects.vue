@@ -1,99 +1,30 @@
 <template>
-    <div class="container mx-auto px-4 py-12 pt-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-12">
-            <!-- Project 1 -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out animated-element">
-                <a href="https://laravel-postify.com/" class="block">
-                    <h3 class="text-xl font-semibold text-white mb-4 hover:text-teal-300 transition duration-300">Laravel Social Media App</h3>
-                </a>
-                <p class="text-gray-300 mb-6">Social Media Website featuring user registration with email verification, customizable profile pages with tabs for posts, followers, followings, photos, and personal information.</p>
-                <div class="flex justify-center mb-4">
-                    <img :src="socialApp" :width="desiredWidth" :height="desiredHeight" class="rounded-lg" />
-                </div>
-                <a href="https://github.com/Sahet-dev/Laravel_Social_Media_webApp" class="text-teal-300 hover:underline">View Details →</a>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out animated-element">
-                <h3 class="text-xl font-semibold text-white mb-4">Blog App. PHP Symfony 6 app</h3>
-                <p class="text-gray-300 mb-6">Create an account and start blogging.</p>
-                <a href="https://github.com/Sahet-dev/Symfony6BlogApp" class="text-teal-300 hover:underline">View Details →</a>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out animated-element">
-                <a href="#" class="block">
-                    <h3 class="text-xl font-semibold text-white mb-4 hover:text-teal-300 transition duration-300">Learn English & Take a Quiz</h3>
-                </a>
-                <p class="text-gray-300 mb-6">English Grammar guide and workbook. Users fill in fields manually and view answers.</p>
-                <div class="flex justify-center mb-4">
-                    <img :src="en" :width="desiredWidth" :height="desiredHeight" class="rounded-lg" />
-                </div>
-                <a href="https://github.com/Sahet-dev/English-grammar-app" class="text-teal-300 hover:underline">View Details →</a>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out animated-element">
-                <a href="https://sahet-dev.github.io/bootstrap_random_quote_generator/" class="block">
-                    <h3 class="text-xl font-semibold text-white mb-4 hover:text-teal-300 transition duration-300">Random Quote Generator</h3>
-                </a>
-                <p class="text-gray-300 mb-6">Get thought-provoking and inspiring quotes at random, ready to share on X.</p>
-                <div class="flex justify-center mb-4">
-                    <img :src="randomQuote" :width="desiredWidth" :height="desiredHeight" class="rounded-lg" />
-                </div>
-                <a href="https://github.com/Sahet-dev/bootstrap_random_quote_generator" class="text-teal-300 hover:underline">View Details →</a>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out animated-element">
-                <a href="https://sahet-dev.github.io/bootstrap_drum_machine/" class="block">
-                    <h3 class="text-xl font-semibold text-white mb-4 hover:text-teal-300 transition duration-300">Drum Machine</h3>
-                </a>
-                <p class="text-gray-300 mb-6">Create rhythmic beats and music compositions with this interactive digital instrument.</p>
-                <div class="flex justify-center mb-4">
-                    <img :src="drumMachine" :width="desiredWidth" :height="desiredHeight" class="rounded-lg" />
-                </div>
-                <a href="https://github.com/Sahet-dev/bootstrap_drum_machine" class="text-teal-300 hover:underline">View Details →</a>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out animated-element">
-                <a href="https://sahet-dev.github.io/markdown_previewer_react_bootstrap/" class="block">
-                    <h3 class="text-xl font-semibold text-white mb-4 hover:text-teal-300 transition duration-300">Markdown Previewer</h3>
-                </a>
-                <p class="text-gray-300 mb-6">Visualize and format Markdown syntax in real-time with this web app.</p>
-                <div class="flex justify-center mb-4">
-                    <img :src="markdown" :width="desiredWidth" :height="desiredHeight" class="rounded-lg" />
-                </div>
-                <a href="https://github.com/Sahet-dev/markdown_previewer_react_bootstrap" class="text-teal-300 hover:underline">View Details →</a>
-            </div>
-
-            <!-- Project 7 -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out animated-element">
-                <a href="https://sahet-dev.github.io/JS_calculator/" class="block">
-                    <h3 class="text-xl font-semibold text-white mb-4 hover:text-teal-300 transition duration-300">JavaScript Calculator App</h3>
-                </a>
-                <p class="text-gray-300 mb-6">Perform mathematical calculations with this browser-based JavaScript calculator app.</p>
-                <div class="flex justify-center mb-4">
-                    <img :src="calculator" :width="desiredWidth" :height="desiredHeight" class="rounded-lg" />
-                </div>
-                <a href="https://github.com/Sahet-dev/JS_calculator" class="text-teal-300 hover:underline">View Details →</a>
-            </div>
-
-            <!-- Project 8 -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out animated-element">
-                <a href="https://sahet-dev.github.io/Pomodoro_clock_react/" class="block">
-                    <h3 class="text-xl font-semibold text-white mb-4 hover:text-teal-300 transition duration-300">Pomodoro Clock App</h3>
-                </a>
-                <p class="text-gray-300 mb-6">Manage your time effectively using the Pomodoro Technique with this app.</p>
-                <div class="flex justify-center mb-4">
-                    <img :src="pomodoro" :width="desiredWidth" :height="desiredHeight" class="rounded-lg" />
-                </div>
-                <a href="https://github.com/Sahet-dev/Pomodoro_clock_react" class="text-teal-300 hover:underline">View Details →</a>
-            </div>
+    <div class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 px-4">
+        <!-- Header Section -->
+        <div class="text-center space-y-4" v-motion-slide-top>
+            <h1 class="text-5xl font-bold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">
+                My Projects
+            </h1>
+            <p class="text-slate-300 text-lg">
+                A collection of applications showcasing different development skills
+            </p>
         </div>
-        <div class="fle text-center items-center">
-            <div class="animated-element p-8 m-8"> ... </div>
+
+        <!-- Projects Grid -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            <!-- Example Project Card -->
+            <div v-for="(project, index) in projects" :key="index" class="relative bg-white/5 backdrop-blur-lg border border-slate-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out animated-element">
+                <a :href="project.link" target="_blank" class="block">
+                    <h3 class="text-xl font-semibold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent mb-4">
+                        {{ project.title }}
+                    </h3>
+                </a>
+                <p class="text-gray-300 mb-6">{{ project.description }}</p>
+                <div class="flex justify-center mb-4">
+                    <img :src="project.image" :width="desiredWidth" :height="desiredHeight" class="rounded-lg border border-teal-400 transition-all duration-300 hover:scale-105 hover:border-blue-500" />
+                </div>
+                <a :href="project.github" target="_blank" class="text-teal-400 hover:text-blue-500 transition-colors duration-300 hover:underline">View Details →</a>
+            </div>
         </div>
     </div>
 </template>
@@ -102,18 +33,95 @@
 import { ref, onMounted } from 'vue';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import {DRUMMACHINE_IMAGE, CALCULATOR_IMAGE, SocialMediaApp_IMAGE, MarkdownPreviewer_IMAGE, Pomodoro_IMAGE, RandomQuote_IMAGE, EngTm_IMAGE } from "@/urlConfig";
+import {
+     DRUMMACHINE_IMAGE,
+    CALCULATOR_IMAGE,
+    SocialMediaApp_IMAGE,
+    MarkdownPreviewer_IMAGE,
+    Pomodoro_IMAGE,
+    RandomQuote_IMAGE,
+    EngTm_IMAGE,
+    CourseApp_IMAGE,
+    CourseAppAdmin_IMAGE
+} from "@/urlConfig";
 
+const projects = [
+    {
+        title: "Laravel Social Media App",
+        description: "A social media platform featuring user profiles, posts, followers, and more.",
+        link: "https://laravel-postify.com/",
+        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        image: SocialMediaApp_IMAGE
+    },
+ {
+        title: "Knowledge selling app",
+        description: "A social media platform featuring user profiles, posts, followers, and more.",
+        link: "https://course.sahet-dev.com/",
+        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        image: CourseApp_IMAGE
+    },
+    {
+        title: "Admin Page of Knowledge selling app",
+        description: "A social media platform featuring user profiles, posts, followers, and more.",
+        link: "https://course-admins.sahet-dev.com/admin-dashboard/",
+        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        image: CourseAppAdmin_IMAGE
+    },
+ {
+        title: "Blog App. PHP Symfony 6 app",
+        description: "Create an account and start blogging.",
+        link: "https://github.com/Sahet-dev/Symfony6BlogApp",
+        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        image: null
+    },
+    {
+        title: "Learn English & Take a Quiz",
+        description: "English Grammar guide and workbook. Users fill in fields manually and view answers.",
+        link: "https://github.com/Sahet-dev/English-grammar-app",
+        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        image: EngTm_IMAGE
+    },
+ {
+        title: "Random Quote Generator",
+        description: "Get thought-provoking and inspiring quotes at random, ready to share on X.",
+        link: "https://github.com/Sahet-dev/bootstrap_random_quote_generator",
+        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        image: RandomQuote_IMAGE
+    },
+ {
+        title: "Drum Machine",
+        description: "Create rhythmic beats and music compositions with this interactive digital instrument.",
+        link: "https://github.com/Sahet-dev/bootstrap_drum_machine",
+        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        image: DRUMMACHINE_IMAGE
+    },
+ {
+        title: "Markdown Previewer",
+        description: "Visualize and format Markdown syntax in real-time with this web app.",
+        link: "https://github.com/Sahet-dev/markdown_previewer_react_bootstrap",
+        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        image: MarkdownPreviewer_IMAGE
+    },
+ {
+        title: "JavaScript Calculator App",
+        description: "Perform mathematical calculations with this browser-based JavaScript calculator app.",
+        link: "https://github.com/Sahet-dev/JS_calculator",
+        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        image: CALCULATOR_IMAGE
+    },
+ {
+        title: "Pomodoro Clock App",
+        description: "Manage your time effectively using the Pomodoro Technique with this app.",
+        link: "https://github.com/Sahet-dev/Pomodoro_clock_react",
+        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        image: Pomodoro_IMAGE
+    },
+
+
+];
 
 const desiredWidth = ref('300px');
 const desiredHeight = ref('auto');
-const socialApp = SocialMediaApp_IMAGE;
-const en = EngTm_IMAGE;
-const randomQuote = RandomQuote_IMAGE;
-const drumMachine = DRUMMACHINE_IMAGE;
-const markdown = MarkdownPreviewer_IMAGE;
-const calculator = CALCULATOR_IMAGE;
-const pomodoro = Pomodoro_IMAGE;
 
 onMounted(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -137,6 +145,5 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
-
+/* Add any additional styling here */
 </style>

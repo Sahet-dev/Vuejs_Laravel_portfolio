@@ -21,6 +21,7 @@
         "@fontsource-variable/inter": "^5.1.0",
         "@headlessui/vue": "^1.7.23",
         "@heroicons/vue": "^2.1.5",
+        "@inertiajs/inertia": "^0.11.1",
         "@vueuse/motion": "^2.2.5",
         "gsap": "^3.12.5",
         "heroicons": "^2.1.5",

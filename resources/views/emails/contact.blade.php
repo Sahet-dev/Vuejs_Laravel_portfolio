@@ -1,81 +1,127 @@
-<!-- resources/views/emails/contact.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form Submission</title>
+    <title>Contact</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+        /* Reset and layout styles */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(to bottom right, #1e293b, #334155, #1e293b);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
         }
         .container {
             width: 100%;
-            max-width: 600px;
-            margin: 20px auto;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            background-color: #4CAF50;
-            padding: 20px;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
             text-align: center;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-            color: #fff;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(to right, #14b8a6, #3b82f6);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+        p {
+            font-size: 1rem;
+            color: #94a3b8;
+            margin-bottom: 1.5rem;
         }
         .content {
-            padding: 20px;
+            display: grid;
+            gap: 20px;
+            text-align: left;
         }
-        .content h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
+        .field {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #334155;
         }
-        .content p {
-            font-size: 16px;
-            margin-bottom: 15px;
+        .field label {
+            font-weight: bold;
+            color: #3b82f6;
+            display: block;
+            margin-bottom: 5px;
         }
-        .content p strong {
-            color: #333;
+        .field .value {
+            font-size: 0.9rem;
+            color: #ffffff;
         }
-        .footer {
-            background-color: #4CAF50;
-            padding: 10px;
-            text-align: center;
-            color: #fff;
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
         }
-        .footer p {
-            margin: 0;
-            font-size: 14px;
+        .social a {
+            color: #94a3b8;
+            font-size: 1.3rem;
+            transition: color 0.3s;
+        }
+        .social a:hover {
+            color: #14b8a6;
+        }
+
+        /* Mobile responsive styles */
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .field .value {
+                font-size: 0.8rem;
+            }
+            .social a {
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
 <body>
+
 <div class="container">
-    <div class="header">
-        <h1>New Contact Form Submission</h1>
-    </div>
+    <h1>Get in Touch</h1>
+    <p>Let's create something amazing together.</p>
+
     <div class="content">
-        <h2>Message Details</h2>
-        <p><strong>Name:</strong> {{ $name }}</p>
-        <p><strong>Email:</strong> {{ $email }}</p>
-        <p><strong>Message:</strong></p>
-        <p>{{ $messageContent }}</p>
+        <div class="field">
+            <label>Name</label>
+            <div class="value">{{ $data['name'] }}</div>
+        </div>
+        <div class="field">
+            <label>Email</label>
+            <div class="value">{{ $data['email'] }}</div>
+        </div>
+        <div class="field">
+            <label>Message</label>
+            <div class="value">{{ $data['message'] }}</div>
+        </div>
     </div>
-    <div class="footer">
-        <p>Thank you for reaching out to us!</p>
-    </div>
+
+
 </div>
+
 </body>
 </html>

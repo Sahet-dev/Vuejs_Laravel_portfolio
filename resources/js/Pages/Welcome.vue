@@ -120,6 +120,7 @@ const leave = (el, done) => {
     el.style.transform = 'translateX(-100px)';
     done();
 };
+
 </script>
 
 <style>

@@ -1,5 +1,5 @@
 
-export const BASE_URL = 'http://127.0.0.1:8000';
+export const BASE_URL = 'https://sahet-dev.com';
 
 export const IMAGE_PROFILE = `${BASE_URL}/storage/me.jpg`;
 

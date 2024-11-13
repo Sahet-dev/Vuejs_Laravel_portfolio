@@ -57,63 +57,63 @@ const projects = [
         title: "Knowledge selling app",
         description: "A social media platform featuring user profiles, posts, followers, and more.",
         link: "https://course.sahet-dev.com/",
-        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        github: "https://github.com/Sahet-dev/CoursesApp",
         image: CourseApp_IMAGE
     },
     {
         title: "Admin Page of Knowledge selling app",
         description: "A social media platform featuring user profiles, posts, followers, and more.",
-        link: "https://course-admins.sahet-dev.com/admin-dashboard/",
-        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        link: "https://course-admins.sahet-dev.com",
+        github: "https://github.com/Sahet-dev/CourseAdminFrontend",
         image: CourseAppAdmin_IMAGE
     },
  {
         title: "Blog App. PHP Symfony 6 app",
         description: "Create an account and start blogging.",
         link: "https://github.com/Sahet-dev/Symfony6BlogApp",
-        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        github: "https://github.com/Sahet-dev/Symfony6BlogApp",
         image: null
     },
     {
         title: "Learn English & Take a Quiz",
         description: "English Grammar guide and workbook. Users fill in fields manually and view answers.",
         link: "https://github.com/Sahet-dev/English-grammar-app",
-        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        github: "https://github.com/Sahet-dev/English-grammar-app",
         image: EngTm_IMAGE
     },
  {
         title: "Random Quote Generator",
         description: "Get thought-provoking and inspiring quotes at random, ready to share on X.",
-        link: "https://github.com/Sahet-dev/bootstrap_random_quote_generator",
-        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        link: "https://sahet-dev.github.io/bootstrap_random_quote_generator",
+        github: "https://github.com/Sahet-dev/bootstrap_random_quote_generator",
         image: RandomQuote_IMAGE
     },
  {
         title: "Drum Machine",
         description: "Create rhythmic beats and music compositions with this interactive digital instrument.",
-        link: "https://github.com/Sahet-dev/bootstrap_drum_machine",
-        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        link: "https://sahet-dev.github.io/bootstrap_drum_machine",
+        github: "https://github.com/Sahet-dev/bootstrap_drum_machine",
         image: DRUMMACHINE_IMAGE
     },
  {
         title: "Markdown Previewer",
         description: "Visualize and format Markdown syntax in real-time with this web app.",
-        link: "https://github.com/Sahet-dev/markdown_previewer_react_bootstrap",
-        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        link: "https://sahet-dev.github.io/markdown_previewer_react_bootstrap",
+        github: "https://github.com/Sahet-dev/markdown_previewer_react_bootstrap",
         image: MarkdownPreviewer_IMAGE
     },
  {
         title: "JavaScript Calculator App",
         description: "Perform mathematical calculations with this browser-based JavaScript calculator app.",
-        link: "https://github.com/Sahet-dev/JS_calculator",
-        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        link: "https://sahet-dev.github.io/JS_calculator",
+        github: "https://github.com/Sahet-dev/JS_calculator",
         image: CALCULATOR_IMAGE
     },
  {
         title: "Pomodoro Clock App",
         description: "Manage your time effectively using the Pomodoro Technique with this app.",
-        link: "https://github.com/Sahet-dev/Pomodoro_clock_react",
-        github: "https://github.com/Sahet-dev/Laravel_Social_Media_webApp",
+        link: "https://sahet-dev.github.io/Pomodoro_clock_react",
+        github: "https://github.com/Sahet-dev/Pomodoro_clock_react",
         image: Pomodoro_IMAGE
     },
 

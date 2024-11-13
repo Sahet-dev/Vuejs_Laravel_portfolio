@@ -11,7 +11,7 @@ import { MotionPlugin } from '@vueuse/motion'
 
 
 
-const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
+const appName = import.meta.env.VITE_APP_NAME || 'Kakajanov';
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,

@@ -34,7 +34,7 @@ import { ref, onMounted } from 'vue';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {
-     DRUMMACHINE_IMAGE,
+    DRUMMACHINE_IMAGE,
     CALCULATOR_IMAGE,
     SocialMediaApp_IMAGE,
     MarkdownPreviewer_IMAGE,
@@ -42,11 +42,18 @@ import {
     RandomQuote_IMAGE,
     EngTm_IMAGE,
     CourseApp_IMAGE,
-    CourseAppAdmin_IMAGE
+    CourseAppAdmin_IMAGE,
+    News_IMAGE
 } from "@/urlConfig";
 
 const projects = [
     {
+        title: "Döwür News App",
+        description: "The Dowur News platform that enables users to browse daily news around the world. Built with java spring framework " ,
+        link: "https://dowur-news.com/",
+        github: "https://github.com/Sahet-dev/Java-News-App-RESTful",
+        image: News_IMAGE
+    }, {
         title: "Laravel Social Media App",
         description: "A social media platform featuring user profiles, posts, followers, and more.",
         link: "https://laravel-postify.com/",

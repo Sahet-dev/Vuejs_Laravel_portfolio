@@ -15,6 +15,8 @@ export const SocialMediaApp_IMAGE = `${BASE_URL}/storage/socialapp.png`;
 export const CourseApp_IMAGE = `${BASE_URL}/storage/courseapp.png`;
 export const CourseAppAdmin_IMAGE = `${BASE_URL}/storage/admincourse.png`;
 
+export const News_IMAGE = `${BASE_URL}/storage/news.png`;
+
 
 
 

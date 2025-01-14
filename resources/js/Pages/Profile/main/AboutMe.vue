@@ -7,7 +7,7 @@
                     About Me
                 </h1>
                 <p class="text-slate-300 text-lg">
-                    Hi, I'm Sahet from Turkmenistan, passionate about frontend and backend development. I care about writing clean code and am constantly seeking new challenges to improve my skills.
+                    Hi, I'm Sahet from Turkmenistan, passionate about frontend and backend development. I like and care about writing reusable code and am constantly seeking new challenges to improve my skills.
                 </p>
             </div>
 
@@ -15,10 +15,10 @@
             <div class="relative bg-white/5 backdrop-blur-lg border-0 shadow-2xl rounded-lg overflow-hidden p-8" >
                 <div class="space-y-6">
                     <p class="text-lg text-slate-300">
-                        I enjoy exploring the latest web technologies and building projects that have a real-world impact. My journey started with simple websites and has now grown into complex applications.
+                        I enjoy exploring web technologies and building projects that have a real-world impact. My journey started with simple websites and has now grown into complex RESTful WEB applications.
                     </p>
                     <p class="text-lg text-slate-300">
-                        In my free time, I love learning new frameworks, improving my UI/UX design skills, and contributing to open-source projects.
+                        In my free time, I love learning new frameworks, improving my UI/UX design skills, and I am ready contribute to projects.
                     </p>
                     <p class="text-lg text-slate-300">
                         I'm looking forward to working in a dynamic environment that values creativity, teamwork, and continuous growth.
@@ -55,10 +55,9 @@
 import { ref } from 'vue'
 
 const skills = ref([
-    'HTML', 'CSS', 'JavaScript ES6', 'Vue.js', 'PHP',  'MySQL', 'SQL',  'Laravel', 'Git', 'REST API', 'Ubuntu', 'Docker', 'GitHub',
+    'HTML', 'CSS', 'JavaScript ES6', 'Vue.js', 'Java', 'Spring / Spring-boot', 'PHP',  'SQL', 'MySQL', 'PostgreSQL',  'Laravel', 'Git', 'REST API', 'Ubuntu', 'Docker', 'GitHub',
 ])
 </script>
 
 <style scoped>
-/* Add any additional custom styles here */
 </style>

@@ -51,9 +51,12 @@
                             <span class="font-semibold text-blue-400">HTML</span>,
                             <span class="font-semibold text-blue-400">CSS</span>,
                             <span class="font-semibold text-blue-400">JavaScript</span>,
+                            <span class="font-semibold text-blue-400">Java</span>,
                             <span class="font-semibold text-blue-400">PHP</span>
                             and frameworks like
-                            <span class="font-semibold text-blue-400">Vue.js</span> and
+                            <span class="font-semibold text-blue-400">Vue.js</span>,
+                            <span class="font-semibold text-blue-400">Spring</span>
+                            and
                             <span class="font-semibold text-blue-400">Laravel</span>.
                         </p>
                     </div>
@@ -69,14 +72,13 @@
                     <div class="group">
                         <div class="relative bg-white/5 backdrop-blur-lg p-8 rounded-2xl transition-all duration-500 hover:bg-white/10">
                             <div class="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-violet-400/20 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500"></div>
-                            <h3 class="text-2xl font-bold mb-4 relative">Social Media Website</h3>
+                            <h3 class="text-2xl font-bold mb-4 relative">World News Website</h3>
                             <p class="text-gray-300 mb-6 relative">
-                                A social media website is an online platform that allows users to create profiles,
-                                share content, connect with others, and engage in various forms of interaction
-                                within a digital community.
-                            </p>
+                                Döwür-News is a modern and dynamic news application designed to provide users with a seamless and responsive news browsing experience.
+                                Built with cutting-edge technologies
+                                including Vue.js for the frontend, Spring Boot for the backend, and PostgreSQL for data management</p>
                             <a
-                                href="https://laravel-postify.com/"
+                                href="https://dowur-news.com/"
                                 class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors relative"
                             >
                                 View Project
@@ -92,7 +94,8 @@
                             <h3 class="text-2xl font-bold mb-4 relative">Knowledge selling app</h3>
                             <p class="text-gray-300 mb-6 relative">
                                 This RESTful API streamlines online course management, supporting user registration, enrollment, progress tracking,
-                                and interactions with secure, scalable access for educational platforms.
+                                and interactions with secure, scalable access for educational platforms. Built with   Vue.js for the frontend, Laravel for the
+                                backend, and MySQL for data management
                             </p>
                             <a
                                 href="https://course.sahet-dev.com/"
